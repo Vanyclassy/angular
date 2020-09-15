@@ -1,1 +1,10 @@
-<p>first works!</p>
+<h1>Photo Comments</h1>
+
+<div class="block">
+  <div class="block__elem1" *ngFor="let item of data">
+    <img class="block__elem3" [src]="item.url" alt="">
+    <div class="block__elem2">{{item.title}}</div>
+
+  </div>
+</div>
+

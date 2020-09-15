@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {TestService} from '../service/test.service';
 
 @Component({
   selector: 'app-first',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
+  constructor(private testService: TestService) {
+  }
+
+  data;
 
   ngOnInit(): void {
+    this.testService.gePhoto()
+      .subscribe(response => this.data = response);
   }
 
 }
