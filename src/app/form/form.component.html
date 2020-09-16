@@ -1,0 +1,37 @@
+<form class="form"
+      name="form"
+      id="form"
+      [formGroup]="form"
+      (ngSubmit)="submitForm()">
+  <h1 class="form__title">Login</h1>
+  <span
+    class="form__message"
+    *ngIf="form.controls['email'].invalid || form.controls['password'].invalid"
+  >
+    Логин или пароль введены неверно
+  </span>
+  <input class="form__input"
+         type="email"
+         name="email"
+         id="email"
+         formControlName="email"
+         placeholder="E-mail">
+  <input
+    class="form__input"
+    type="password"
+    name="password"
+    id="password"
+    formControlName="password"
+    placeholder="Password">
+  <button
+    class="form__submit"
+    type="submit"
+    name="submit"
+    id="submit"
+  >
+    Login
+  </button>
+  <p class="form__ques">Forgot your password?
+    <a href="" class="form__click">Click here</a></p>
+</form>
+
