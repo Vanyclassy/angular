@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {TestService} from '../service/test.service';
+import {IPhoto, TestService} from '../service/test.service';
 
 @Component({
   selector: 'app-first',

@@ -32,7 +32,7 @@ export class FormComponent implements OnInit {
   }
 
   submitForm(): void {
-    this.formService.setUserData({email: this.form.value.email, password: this.form.value.password });
+    this.formService.setUserData({email: this.form.value.email, password: this.form.value.password});
   }
 
 }

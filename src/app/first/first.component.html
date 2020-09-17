@@ -1,10 +1,6 @@
 <h1>Photo Comments</h1>
-
 <div class="block">
-  <div class="block__elem1" *ngFor="let item of data">
-    <img class="block__elem3" [src]="item.url" alt="">
-    <div class="block__elem2">{{item.title}}</div>
-
-  </div>
+  <app-photo *ngFor="let item of data" [title]="item.title" [src]="item.url"></app-photo>
 </div>
+
 

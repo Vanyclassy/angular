@@ -7,6 +7,7 @@ import {SecondComponent} from './second/second.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormComponent} from './form/form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { PhotoComponent } from './photos/photo/photo.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     FirstComponent,
     SecondComponent,
     FormComponent,
+    PhotoComponent,
 
   ],
   imports: [
