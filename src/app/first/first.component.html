@@ -1,6 +1,8 @@
 <h1>Photo Comments</h1>
 <div class="block">
-  <app-photo *ngFor="let item of data" [title]="item.title" [src]="item.url"></app-photo>
+  <ng-container *ngFor="let item of data">
+    <app-photo [title]="item.title" [src]="item.url"></app-photo>
+  </ng-container>
 </div>
 
 

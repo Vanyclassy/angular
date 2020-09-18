@@ -7,7 +7,9 @@ import {SecondComponent} from './second/second.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormComponent} from './form/form.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { PhotoComponent } from './photos/photo/photo.component';
+import {PhotoComponent} from './photos/photo/photo.component';
+import { ClickMeComponent } from './second/click-me/click-me.component';
+
 
 
 @NgModule({
@@ -17,7 +19,7 @@ import { PhotoComponent } from './photos/photo/photo.component';
     SecondComponent,
     FormComponent,
     PhotoComponent,
-
+    ClickMeComponent,
   ],
   imports: [
     BrowserModule,

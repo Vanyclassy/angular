@@ -14,7 +14,7 @@ export class FirstComponent implements OnInit {
   data;
 
   ngOnInit(): void {
-    this.testService.gePhoto()
+    this.testService.getPhoto()
       .subscribe(response => this.data = response);
   }
 

@@ -22,7 +22,7 @@ export class TestService {
   }
 
 
-  gePhoto(): Observable<IPhoto[]> {
+  getPhoto(): Observable<IPhoto[]> {
     const url = 'http://jsonplaceholder.typicode.com/photos';
     return this.http.get<IPhoto[]>(url);
   }
