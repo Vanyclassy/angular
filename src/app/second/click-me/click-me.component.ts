@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./click-me.component.styl']
 })
 export class ClickMeComponent implements OnInit {
-  @Input() title: string;
+
 
   constructor() {
   }
