@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./second.component.styl']
 })
 export class SecondComponent implements OnInit {
+  counterValue = 0;
 
   constructor() {
   }
