@@ -9,6 +9,7 @@ import {FormComponent} from './form/form.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import {PhotoComponent} from './photos/photo/photo.component';
 import {ClickMeComponent} from './second/click-me/click-me.component';
+import {FactorialPipe} from './factorial.pipe';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {ClickMeComponent} from './second/click-me/click-me.component';
     FormComponent,
     PhotoComponent,
     ClickMeComponent,
+    FactorialPipe,
   ],
   imports: [
     BrowserModule,

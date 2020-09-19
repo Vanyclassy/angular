@@ -10,6 +10,7 @@ export class PhotoComponent implements OnInit {
 
   @Input() title: string;
   @Input() src: string;
+  x = 5;
 
   constructor() {
   }
